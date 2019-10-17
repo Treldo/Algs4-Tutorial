@@ -25,7 +25,7 @@ permalink: /
 部分解题代码用到了书中提供的类库，VS Code、 IDEA 等编辑器内置了快捷跳转至源码位置的操作，读者可以根据自身情况进行参考。另附本书配套的 <a href="https://vubee.github.io/Javadoc_algs4/index.html" target="_blank">在线 API 文档</a> <font color="red" size="2px">（非官方在线文档，支持搜索，托管于 GitHub）</font>、[部分章节源码](https://algs4.cs.princeton.edu/code/) ，以及下载链接 [API 文档](https://foyoodo.oss-cn-beijing.aliyuncs.com/api/API_algs4.zip) 、[algs4.jar](https://algs4.cs.princeton.edu/code/algs4.jar) 、[algs4-data.zip](https://algs4.cs.princeton.edu/code/algs4-data.zip) 。
 
 
-<b><font color="red">‼️</font> &ensp;更新速度：</b> 周一更新章节，周二更新习题，提高题和实验题会不定时更新。
+<b><font color="red">‼️</font> &ensp;更新速度：</b> 周一更新章节，周二更新习题。
 
 *预计完更时间：2020 年 2 月*
 
