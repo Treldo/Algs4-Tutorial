@@ -225,6 +225,6 @@ public class MergeBU {
 
 ## 习题
 
-见 [习题 2-2](/independent-pages/src/algs4/2/2.2/)
+见 [习题 2-2]({{ site.baseurl }}{% link docs/ex_2/pa_2.md %})
 
 ---

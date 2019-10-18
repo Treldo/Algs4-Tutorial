@@ -247,6 +247,6 @@ public class ThreeSumFast {
 
 ## 习题
 
-见 [习题 1-4](/independent-pages/src/algs4/1/1.4/)
+见 [习题 1-4]({{ site.baseurl }}{% link docs/ex_1/pa_4.md %})
 
 ---

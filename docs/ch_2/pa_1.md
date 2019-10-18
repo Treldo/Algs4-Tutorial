@@ -261,6 +261,6 @@ public class Shell {
 
 ## 习题
 
-见 [习题 2-1](/independent-pages/src/algs4/2/2.1/)
+见 [习题 2-1]({{ site.baseurl }}{% link docs/ex_2/pa_1.md %})
 
 ---

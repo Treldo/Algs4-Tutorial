@@ -159,8 +159,6 @@ String c = "to";
 |`a.split(" ")[1]`|"is"|
 |`b.equals(c)`|false|
 
-<br>
-
 ## 抽象数据类型的实现
 
 - 实例变量：每个实例变量的声明都需要一个 **可见性修饰符**。
@@ -192,8 +190,6 @@ String c = "to";
 - 实例变量：整个类。
 
 如果实例变量出现二义性，可以使用 `this` 进行区别。
-
-<br>
 
 ## 更多抽象数据类型的实现
 
@@ -296,13 +292,9 @@ public class TestVisualAccumulator {
 - 用法
 与 `Accumulator` 用法一致。
 
-<br>
-
 ## 数据类型的设计
 
 - [ ] 省略，待更新
-
-<br>
 
 ## 补充
 
@@ -317,10 +309,8 @@ public class TestVisualAccumulator {
 - 类中的所有方法都可以访问静态变量。静态变量的作用域是全局的，所以使用时要非常小心。
 - 不再被支持但为了保持兼容性而留在 API 中的方法叫做被弃用（deprecated）的方法。
 
-<br>
-
 ## 习题
 
-见 [习题 1-2](/independent-pages/src/algs4/1/1.2/)
+见 [习题 1-2]({{ site.baseurl }}{% link docs/ex_1/pa_2.md %})
 
 ---

@@ -1098,4 +1098,6 @@ Stack<String>[] a = (Stack<String>[]) new Stack[N];
 
 ## 习题
 
-见 [习题 1-3](/independent-pages/src/algs4/1/1.3/)
+见 [习题 1-3]({{ site.baseurl }}{% link docs/ex_1/pa_3.md %})
+
+---
