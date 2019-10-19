@@ -25,18 +25,12 @@ parent: CH_1
 public class Stopwatch {
     private final long start;
 
-    /**
-     * 创建一个计时器。
-     */
+    // 创建一个计时器。
     public Stopwatch() {
         start = System.currentTimeMillis();
     }
 
-    /**
-     * 返回创建对象以来经过的时间。
-     *
-     * @return 从对象创建以来经过的时间（单位：s）
-     */
+    // 返回创建对象以来经过的时间。
     public double elapsedTime() {
         long now = System.currentTimeMillis();
         return (now - start) / 1000.0;
@@ -47,12 +41,7 @@ public class Stopwatch {
 - 对数组中三个不同元素进行加和检验
 ```java
 public class ThreeSum {
-    /**
-     * 计算数组中相邻三个数的加和，如果等于 0 记录，最后返回计算结果为 0 的次数。
-     *
-     * @param a 进行处理的数组
-     * @return 计算结果为 0 的次数
-     */
+    // 计算数组中相邻三个数的加和，如果等于 0 记录，最后返回计算结果为 0 的次数。
     public static int count(int[] a) {
         int n = a.length;
         int cnt = 0;
@@ -243,7 +232,7 @@ public class ThreeSumFast {
 
 ## 补充
 
-- \\(f(N)\\)~\\(g(N)\\) 的正式定义为 \\(\lim_{N\to\infty}\frac{f(N)}{g(N)} = 1\\)
+- \\(f(N)\\) ~ \\(g(N)\\) 的正式定义为 \\(\lim_{N\to\infty}\frac{f(N)}{g(N)} = 1\\)
 
 ## 习题
 

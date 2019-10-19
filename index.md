@@ -33,9 +33,9 @@ permalink: /
 *预计完更时间：2020 年 2 月*
 
 部分习题答案是可以在 <a href="https://algs4.cs.princeton.edu/home/" target="_blank">官网</a> 上找到的，另外
-- <a href="https://github.com/jimmysuncpt" target="_blank">jimmysuncpt</a> 在 GitHub 分享了自己的解题代码，虽然不是特别详细，但很值得参考，见 <a href="https://github.com/jimmysuncpt/Algorithms" target="_blank">Algorithms</a> ；
-- <a href="https://github.com/YangXiaoHei" target="_blank">杨晗</a> 也在 GitHub 上分享了自己的解题代码，用 Java 语言描述，目前更新到第四章，见 <a href="https://github.com/YangXiaoHei/Algorithms" target="_blank">Algorithms</a> ；
-- <a href="https://github.com/ikesnowy" target="_blank">沈星繁</a> 制作了 C# 版的习题题解网站，支持题目检索，并提供了配套 API 文档，目前同样是在更新中，见 <a href="https://alg4.ikesnowy.com" target="_blank">C# 题解</a> 。
+- <a href="https://github.com/jimmysuncpt" target="_blank">大强哥</a> 在 GitHub 分享了自己的解题代码，虽然不是特别详细，但很值得参考，见 <a href="https://github.com/jimmysuncpt/Algorithms" target="_blank">Algorithms</a> ；
+- <a href="https://github.com/YangXiaoHei" target="_blank">杨晗</a> 同学也在 GitHub 上分享了自己的解题代码，用 Java 语言描述，目前更新到第四章，见 <a href="https://github.com/YangXiaoHei/Algorithms" target="_blank">Algorithms</a> ；
+- <a href="https://github.com/ikesnowy" target="_blank">沈星繁</a> 同学制作了 C# 版的习题题解网站，支持题目检索，并提供了配套 API 文档，目前同样是在更新中，见 <a href="https://alg4.ikesnowy.com" target="_blank">C# 题解</a> 。
 
 在此感谢他们的分享！
 {: .fs-5 .fw-500 }
