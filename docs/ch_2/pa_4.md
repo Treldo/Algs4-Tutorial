@@ -278,7 +278,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
 | `minIndex()` | \\(1\\)    |
 | `delMin()`   | \\(logN\\) |
 
-这段讨论针对找出最小元素的队列 <a href="https://algs4.cs.princeton.edu/24pq/IndexMinPQ.java.html" target="_blank">IndexMinPQ</a> ；找出最大元素的版本在这里 <a href="https://algs4.cs.princeton.edu/24pq/IndexMaxPQ.java.html" target="_blank">IndexMaxPQ</a> 。_
+这段讨论针对找出最小元素的队列 <a href="https://algs4.cs.princeton.edu/24pq/IndexMinPQ.java.html" target="_blank">IndexMinPQ.java</a> ；找出最大元素的版本在这里 <a href="https://algs4.cs.princeton.edu/24pq/IndexMaxPQ.java.html" target="_blank">IndexMaxPQ.java</a> 。_
 
 📒 **看到代码中使用到了三个（平行）数组，这里大致说一下三个数组的作用：**
 
@@ -363,6 +363,90 @@ public class Multiway {
 
 ## 堆排序
 
+**堆排序可以分为两个阶段：**
 
+- *堆的构造* ：将原始数组重新组织安排进一个堆中；
+- *下沉排序* ：按递减顺序取出所有元素并得到排序结果。
+
+### 堆的构造
+
+- 从左至右遍历数组，用 `swim()` 保证指针左侧的所有元素已经是一棵有序的完全树（类似于插入元素）；
+- 从右至左用 `sink()` 函数构造子堆，只需要扫描一半的元素（\\(N/2~1\\)），因为可以跳过大小为 1 的子堆，从大小为 3 的子堆开始进行下沉操作。
+
+这样的到的结果是构造一个“堆有序”的二叉堆，还没有完成排序过程。
+
+**命题**：用下沉操作由 \\(N\\) 个元素构造堆只需要少于 \\(2N\\) 次比较以及少于 \\(N\\) 次交换。
+
+**堆排序**
+
+```java
+public static void sort(Comparable[] a) {
+    int N = a.length;
+    for (k = N/2; k >= 1; k--)
+        sink(a, k, N);
+    while (N > 1) {
+        exch(a, 1, N--);
+        sink(a, 1, N);
+    }
+}
+```
+
+这里的 `sink()` 方法已经改写，具体可以参考 <a href="https://algs4.cs.princeton.edu/24pq/Heap.java.html" target="_blank">Heap.java</a> 。
+
+**堆排序的轨迹**
+
+<div style="text-align:center;">
+  <img src="{{ site.baseurl }}{% link /assets/images/2.4/heapsort-trace.png %}" width="250" />
+</div>
+
+<br />
+
+**堆排序：堆的构造（左）和下沉排序（右）**
+
+<div style="text-align:center;">
+  <img src="{{ site.baseurl }}{% link /assets/images/2.4/heapsort.png %}" width="450" />
+</div>
+
+### 下沉排序
+
+
+<img style="float:right; width:25%;" src="{{ site.baseurl }}{% link /assets/images/2.4/visual-trace-heapsort.png %}" />
+
+堆排序的主要工作就在第二步，也就是上面代码中的 while 循环。它主要是将堆中的最大元素删除并缩短数组长度，循环结束数组有序，达到排序效果，这就类似于选择排序。
+
+堆排序的可视轨迹见右图 ➡️
+
+---
+
+**命题**：将 \\(N\\) 个元素排序，堆排序只需要少于（\\(2NlgN+2N\\)）次比较（以及一半次数地交换）。
+
+**证明**：\\(2N\\) 项来自于堆的构造，\\(2NlgN\\) 项来自于每次下沉最大可能需要 \\(2lgN\\) 次比较。
+
+---
+
+*堆排序* 的发明人是 **J.W.J.Williams** ，并由 **R.W.Floyd** 在 1964 年改进。
+
+### 先下沉后上浮
+
+因为大多数重新插入堆的元素会直接加入到堆底，**Floyd** 发现我们可以免去检查元素是否到达正确位置来节省时间。也就是直接提升较大的子结点直至到达堆底，然后再使元素上浮 🔝 到正确位置。
+
+这样几乎可以将比较的次数减半，接近了堆司机数组进行归并排序所需要的比较次数。不过需要额外的空间，在实际应用中只会当比较操作代价高时较高时才会使用（例如对字符串或其他键值较长类型元素进行排序时）。
+
+堆排序是我们所知唯一能够同时最优地利用时间和空间的方法 —— 在最坏情况下也能保证使用 ~ \\(2NlgN\\) 次比较和额外空间。当空间非常紧张的时候（例如嵌入式系统或低成本的移动设备中）很流行，甚至机器码也只需要几行就能够实现较好的性能。
+
+*而现代系统的许多应用很少使用它，因为它无法利用缓存。数组元素很少和邻其他元素进行比较，因此缓存未命中的次数要远远高于大多数比较都在相邻元素见进行的算法，如快速排序、归并排序，甚至是希尔排序。*
+
+用对实现的优先队列能够在 *插入操作* 和 *删除最大元素操作* 混合的动态场景中保证对数级别的运行时间。
+
+## 补充
+
+- 使用泛型是为了在用例中将方法返回值转换为某种具体的类型（一般要尽量避免在用例中进行类型转换）；
+- a[0] 的值可以用作哨兵（作为 a[1] 的父结点），在某些堆的应用中很有用；
+- 构造堆时，使用代码中的 `sink()` 方式要比逐个向堆中添加元素快上 20% ，所需代码更少（没有用到 `swim()` 函数）；
+- 继承 `Comparable<Key>` 是为了使用其中的 `compareTo()` 方法。
+
+## 练习
+
+见 [习题 2-4]({{ site.baseurl }}{% link docs/ex_2/pa_4.md %})
 
 ---

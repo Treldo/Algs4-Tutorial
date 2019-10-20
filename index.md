@@ -10,14 +10,16 @@ permalink: /
 
 [**Algorithms-4th-Tutorial**](https://github.com/vubee/Algorithms-4th-Tutorial) 涵盖了《算法（第 4 版）》一书中的大部分重要的知识点以及一些浅显易懂的解释，希望能帮助自己和大家更好地掌握书中的内容，并在复习时有一个可以对照的大纲。我在每个小节的后面也会附上习题的解答，可以作参考。
 
+当然，你也可以认为这是本书 📚的 **精简版** 。
+{: .fs-4 }
+
 知识水平有限，bug 在所难免，本项目没有开启评论，如果发现文中有出错的地方欢迎通过 [邮箱](mailto:vuebee@163.com) 或者提 <a href="https://github.com/Vubee/Algorithms-4th-Tutorial/issues/new" target="_blank">issues</a> 反馈给我，我会尽量及时回复并进行修正，如果你希望出现在 [分隔板]({{ site.baseurl }}{% link docs/splitter/index.md %}) 上也可以跟我注明。
-{: .fs-3 }
 
 [Get started now]({{ site.baseurl }}{% link docs/ch_1/pa_1.md %}){: .btn .btn-purple .mr-4 } [View it on GitHub](https://github.com/vubee/Algorithms-4th-Tutorial){: .btn }
 
 ---
 
-**免责声明**：本文部分内容来自于《 算法（第4版）》一书，提供的所有资料仅供学习使用。如涉及到版权问题，请通过 [邮箱](mailto:vuebee@163.com) 联系我。
+**免责声明**：本文大部分内容来自于《 算法（第4版）》一书，提供的所有资料仅供学习使用。如涉及到版权问题，请通过 [邮箱](mailto:vuebee@163.com) 联系我。
 {: .fs-2 }
 
 
