@@ -1,6 +1,6 @@
 ---
 layout: default
-title: EX_1
+title: 习题 一
 nav_order: 9
 has_children: true
 ---

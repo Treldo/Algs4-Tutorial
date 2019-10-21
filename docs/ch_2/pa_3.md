@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_3
+title: 2.3&ensp;快速排序
 nav_order: 3
-parent: CH_2
+parent: 第二章&emsp;排序
 ---
 
 ## 2.3&ensp;快速排序

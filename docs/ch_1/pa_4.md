@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_4
+title: 1.4&ensp;算法分析
 nav_order: 4
-parent: CH_1
+parent: 第一章&emsp;基础
 ---
 
 ## 1.4&ensp;算法分析

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_5
+title: 1-5
 nav_order: 5
-parent: EX_1
+parent: 习题 一
 ---
 
 ## 习题 -> 1.5&ensp;案例研究：union-find 算法

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_2
+title: 1.2&ensp;数据抽象
 nav_order: 2
-parent: CH_1
+parent: 第一章&emsp;基础
 ---
 
 ## 1.2&ensp;数据抽象

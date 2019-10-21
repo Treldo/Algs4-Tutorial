@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_2
+title: 2-2
 nav_order: 2
-parent: EX_2
+parent: 习题 二
 ---
 
 ## 习题 -> 2.2&ensp;归并排序

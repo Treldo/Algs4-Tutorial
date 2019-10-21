@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_1
+title: 1.1&ensp;基础编程模型
 nav_order: 1
-parent: CH_1
+parent: 第一章&emsp;基础
 ---
 
 ## 1.1&ensp;基础编程模型

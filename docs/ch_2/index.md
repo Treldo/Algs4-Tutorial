@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CH_2
+title: 第二章&emsp;排序
 nav_order: 3
 has_children: true
 ---

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_1
+title: 2.1&ensp;初级排序算法
 nav_order: 1
-parent: CH_2
+parent: 第二章&emsp;排序
 ---
 
 ## 2.1&ensp;初级排序算法

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_1
+title: 2-1
 nav_order: 1
-parent: EX_2
+parent: 习题 二
 ---
 
 ## 习题 -> 2.1&ensp;初级排序算法

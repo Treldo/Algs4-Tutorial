@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CH_5
+title: 第五章&emsp;字符串
 nav_order: 6
 has_children: true
 ---

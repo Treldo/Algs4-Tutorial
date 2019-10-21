@@ -12,16 +12,24 @@ h1,
 h2,
 .text-beta {
   @include fs-6;
+  color: #273c75;
 }
 
 h3,
 .text-gamma {
   @include fs-5;
+  color: #40739e;
 }
 
-h4,
+h4 {
+  @include fs-4;
+  color: #3498db;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 .text-delta {
-  @include fs-2;
+  @include fs-4;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.1em;

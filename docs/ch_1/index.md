@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CH_1
+title: 第一章&emsp;基础
 nav_order: 2
 has_children: true
 ---

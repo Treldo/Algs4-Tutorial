@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_4
+title: 2.4&ensp;优先队列
 nav_order: 4
-parent: CH_2
+parent: 第二章&emsp;排序
 ---
 
 ## 2.4&ensp;优先队列
@@ -278,7 +278,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
 | `minIndex()` | \\(1\\)    |
 | `delMin()`   | \\(logN\\) |
 
-这段讨论针对找出最小元素的队列 <a href="https://algs4.cs.princeton.edu/24pq/IndexMinPQ.java.html" target="_blank">IndexMinPQ.java</a> ；找出最大元素的版本在这里 <a href="https://algs4.cs.princeton.edu/24pq/IndexMaxPQ.java.html" target="_blank">IndexMaxPQ.java</a> 。_
+这段讨论针对找出最小元素的队列 <a href="https://algs4.cs.princeton.edu/24pq/IndexMinPQ.java.html" target="_blank">IndexMinPQ.java</a> ；找出最大元素的版本在这里 <a href="https://algs4.cs.princeton.edu/24pq/IndexMaxPQ.java.html" target="_blank">IndexMaxPQ.java</a> 。
 
 📒 **看到代码中使用到了三个（平行）数组，这里大致说一下三个数组的作用：**
 

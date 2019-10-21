@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_5
+title: 1.5&ensp;union-find 算法
 nav_order: 5
-parent: CH_1
+parent: 第一章&emsp;基础
 ---
 
 ## 1.5&ensp;union-find 算法

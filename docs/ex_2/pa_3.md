@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_3
+title: 2-3
 nav_order: 3
-parent: EX_2
+parent: 习题 二
 ---
 
 ## 习题 -> 2.3&ensp;快速排序

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_3
+title: 1.3&ensp;背包、队列和栈
 nav_order: 3
-parent: CH_1
+parent: 第一章&emsp;基础
 ---
 
 ## 1.3&ensp;背包、队列和栈

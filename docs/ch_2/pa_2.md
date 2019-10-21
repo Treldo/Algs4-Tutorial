@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_2
+title: 2.2&ensp;归并排序
 nav_order: 2
-parent: CH_2
+parent: 第二章&emsp;排序
 ---
 
 ## 2.2&ensp;归并排序

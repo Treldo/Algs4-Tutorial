@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CH_3
+title: 第三章&emsp;查找
 nav_order: 4
 has_children: true
 ---

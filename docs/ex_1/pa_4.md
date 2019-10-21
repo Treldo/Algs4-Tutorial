@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_4
+title: 1-4
 nav_order: 4
-parent: EX_1
+parent: 习题 一
 ---
 
 ## 习题 -> 1.4&ensp;算法分析

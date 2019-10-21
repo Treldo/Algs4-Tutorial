@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: 第〇章&emsp;前言
 nav_order: 1
 permalink: /
 ---

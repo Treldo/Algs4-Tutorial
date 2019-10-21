@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CH_6
+title: 第六章&emsp;背景
 nav_order: 7
 has_children: true
 ---

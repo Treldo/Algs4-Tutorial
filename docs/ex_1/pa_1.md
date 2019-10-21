@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_1
+title: 1-1
 nav_order: 1
-parent: EX_1
+parent: 习题 一
 ---
 
 ## 习题 -> 1.1&ensp;基础编程模型

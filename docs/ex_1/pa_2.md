@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_2
+title: 1-2
 nav_order: 2
-parent: EX_1
+parent: 习题 一
 ---
 
 ## 习题 -> 1.2&ensp;数据抽象

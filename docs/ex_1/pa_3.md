@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PA_3
+title: 1-3
 nav_order: 3
-parent: EX_1
+parent: 习题 一
 ---
 
 ## 习题 -> 1.3&ensp;背包、队列和栈
