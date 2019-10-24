@@ -182,7 +182,7 @@ Y U X E F V W A B C D R S T
 
 比较次数最少的一种情况就是所有元素的键值都相等，这样一来也就不需要进行交换操作，每次方法的调用只进行一次比较。
 
-有一篇论文讨论了堆排序最坏输入的构造方式，参见：<a href="https://arxiv.org/pdf/1504.01459.pdf" target="_blank">A Complete Worst-Case Analysis of Heapsort with...</a>
+有一篇论文讨论了堆排序最坏输入的构造方式，参见：<a href="https://arxiv.org/pdf/1504.01459.pdf" target="_blank">A Complete Worst-Case Analysis of Heapsort with...</a> 。
 
 以及对应的 Java 代码：<a href="http://csc.csudh.edu/suchenek/MakeHeap.html" target="_blank">MakeHeap.java</a> 。
 

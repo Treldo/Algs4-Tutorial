@@ -28,7 +28,7 @@ permalink: /
 
 部分解题代码用到了书中提供的类库，VS Code、 IDEA 等编辑器内置了快捷跳转至源码位置的操作，读者可以根据自身情况进行参考。另附本书配套的 <a href="https://vubee.github.io/Javadoc_algs4/index.html" target="_blank">在线 API 文档</a> <font color="red" size="2px">（非官方在线文档，支持搜索，托管于 GitHub）</font>、[部分章节源码](https://algs4.cs.princeton.edu/code/) ，以及下载链接 [API 文档](https://foyoodo.oss-cn-beijing.aliyuncs.com/api/API_algs4.zip) 、[algs4.jar](https://algs4.cs.princeton.edu/code/algs4.jar) 、[algs4-data.zip](https://algs4.cs.princeton.edu/code/algs4-data.zip) 。
 
-要善于参考书中的源码！
+要善于利用书中的源码！
 
 手头有书的同学最好与原书对照阅读，没有书的同学可以参考我分享出来的英文原版 <a href="https://545c.com/file/21865438-400334796" target="_blank">Algorithms 4th.pdf</a> 。
 
