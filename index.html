@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css"> -->
+  <!-- Theme: Simple -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <style>
+    :root {
+      --base-font-family: Monaco, Consolas;
+      --navbar-menu-link-color--hover: rgb(24, 115, 212);
+
+      --sidebar-name-font-weight: 600;
+
+      --code-font-family: Monaco, Consolas, Inconsolata;
+      --code-inline-background: rgb(240, 240, 240);
+      --code-font-size: calc(var(--font-size-m) * 0.85);
+      --cover-max-width: auto;
+
+      /* Add sidebar navigation bullets */
+      --sidebar-nav-link-before-content-l3: '✈︎';
+      --sidebar-width: 20em;
+    }
+  </style>
+</head>
+<body>
+  <div id="app" style="text-align: center;">
+    <p>加载中...</p>
+    <p>如果你已经停留在这个页面很久且网络通畅，那可能是 CDN 解析出了点问题，请稍后再进行访问。<br />
+    不必担心，这种情况不常发生。</p>
+  </div>
+  <script>
+    window.$docsify = {
+      name: 'Algs4-Tutorial',
+      repo: '',
+      search: 'auto',
+      coverpage: true,
+      subMaxLevel: 3,
+      loadSidebar: true,
+      loadNavbar: true,
+      auto2top: true,               // 切换页面后自动跳转到页面顶部
+      autoHeader: true,
+      mergeNavbar: true,            // 小屏设备下合并导航栏到侧边栏
+      notFoundPage: true,
+      notFoundPage: '404.md',
+      // docsify-copy-code
+      copyCode: {
+        buttonText : '点击复制',
+        errorText  : '文本信息错误',
+        successText: '复制成功'
+      },
+      // docsify-tabs
+      tabs: {
+        theme: 'material',
+      },
+      pagination: {
+        previousText: '上一节',
+        nextText: '下一节',
+        crossChapter: true
+      },
+      search: {
+      maxAge: 864000, // Expiration time, the default one day
+      paths: [], // or 'auto'
+      placeholder: '搜索',
+      noData: '找不到结果',
+      // Headline depth, 1 - 6
+      depth: 2,
+    }
+  }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.9.4/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-java.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-c.js"></script> -->
+
+  <!-- CDN files for docsify-katex -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  <!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
+
+  <!-- docsify-tabs (latest v1.x.x) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.9.4/plugins/zoom-image.min.js"></script>
+
+</body>
+</html>
+
