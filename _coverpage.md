@@ -1,4 +1,4 @@
-![logo](_media/cover.svg ':size=500')
+<img src="_media/cover.svg" width="80%">
 
 # Algs4-Tutorial
 

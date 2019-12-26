@@ -11,6 +11,7 @@
   * [2.4&ensp;优先队列](ch_2/pa_4.md)
   * [2.5&ensp;应用](ch_2/pa_5.md)
 * <b>第三章&emsp;查找</b>
+  * [3.1&ensp;符号表](ch_3/pa_1.md)
 * <b>第四章&emsp;图</b>
 * <b>第五章&emsp;字符串</b>
 * <b>第六章&emsp;背景</b>
