@@ -73,3 +73,76 @@
 符号表的重点在于其中使用的数据结构和 `get()`、`put()` 方法。在用例代码中，除非我们想使用一个特定的实现，我们都会使用 ST 表示一个符号表的实现。
 
 ## 用例举例
+
+### 行为测试用例
+
+从标准输入接受多个字符串，构造一张符号表来将 i 和第 i 个字符串相关联，再打印符号表。
+
+**简单的符号表测试用例**
+
+```java
+public static void main(String[] args) {
+    ST<String, Integer> st;
+    st = new St<String, Integer>();
+
+    for (int i = 0; !StdIn.isEmpty(); i++) {
+        String key = StdIn.readString();
+        st.put(key, i);
+    }
+
+    for (String s : st.keys())
+        StdOut.println(s + " " + st.get(s));
+}
+```
+
+### 性能测试用例
+
+从标准输入中得到一列字符串并记录每个（长度达到指定阈值）字符串出现的次数，然后遍历所有键并找出出现频率最高的键。这是一种 **字典** 。
+
+**大型测试输入流的性质**
+
+<div style="text-align: center;">
+
+![char-input-stream](../_media/3.1/char-input-stream.jpeg ':size=600')
+
+</div>
+
+**符号表的用例**
+
+```java
+public class FrequencyCounter {
+    public static void main(String[] args) {
+        int minlen = Integer.parseInt(args[0]); // 最小键长
+        ST<String, Integer> st = new ST<String, Integer>();
+        while (!StdIn.isEmpty()) { // 构造符号表并统计频率
+            String word = StdIn.readString();
+            if (word.length() < minlen) continue; // 忽略较短的单词
+            if (!st.contains(word)) st.put(word, 1);
+            else st.put(word, st.get(word) + 1);
+        }
+        // 找出出现频率最高的单词
+        String max = "";
+        st.put(max, 0);
+        for (String word : st.keys())
+            if (st.get(word) > st.get(max)) max = word;
+        StdOut.println(max + " " + st.get(max));
+    }
+}
+```
+
+这个符号表的用例统计了标准输入中各个单词的出现频率，然后将频率出现最高的单词打印出来。命令行中的参数指定了表中键的最短长度。
+
+> **研究符号表处理大型文本的性能要考虑：**
+>
+> - 每个单词都会被作为键进行搜索，因此处理性能和输入文本的单词总量必然有关；
+> - 输入的每个单词都会被存入符号表，因此输入流中不同的单词的总数也是相关的。
+
+FrequencyCounter 是一种极为常见的应用的代表，它与许多其他符号表应用有同样的<mark>特性</mark>：
+
+- 混合使用查找和删除的操作；
+- 大量不同的键；
+- 查找操作比插入操作多得多；
+- 虽然不可预测，但查找和插入操作的使用模式并非随机。
+
+
+
