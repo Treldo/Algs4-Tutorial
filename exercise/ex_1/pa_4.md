@@ -48,7 +48,11 @@ public static void main(String[] args) {
 
 生成的图像类似于这样：
 
-<img src="http://foyoodo.oss-cn-beijing.aliyuncs.com/image_src/sketch/DoublingTest.png" width="200"/>
+<div style="text-align: center;">
+
+![](../../_media/1.4/DoublingTest.png ':size=300')
+
+</div>
 
 ### 4. 为 TwoSum 建立表格
 

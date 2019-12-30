@@ -144,5 +144,75 @@ FrequencyCounter 是一种极为常见的应用的代表，它与许多其他符
 - 查找操作比插入操作多得多；
 - 虽然不可预测，但查找和插入操作的使用模式并非随机。
 
+## 无序链表中的顺序查找
 
+使用基本链表结构，`get()` 方法遍历链表，`put()` 也同样是遍历链表，在指定位置更新相关键的值。
+
+**使用基于链表的符号表的索引用例的轨迹**
+
+<div style="text-align: center;">
+
+![index-sample-table](../_media/3.1/index-sample-table.jpeg ':size=600')
+
+</div>
+
+**顺序查找（基于无序链表）**
+
+```java
+public class SequentialSearchST<Key, Value> {
+    private Node first; // 链表首结点
+
+    private class Node { // 链表结点的定义
+        Key key;
+        Value val;
+        Node next;
+        public Node(Key key, Value val, Node next) {
+            this.key = key;
+            this.val = val;
+            this.next = next;
+        }
+    }
+    public Value get(Key key) { // 查找给定的键，返回相关联的值
+        for (Node x = first; x != null; x = x.next)
+            if (key.equals(x.key))
+                return x.val; // 命中
+        return null; // 未名中
+    }
+    public void put(Key key, Value val) { // 查找给定的键，找到则更新其值，否则在表中新建结点
+        for (Node x = first; x != null; x = x.next)
+            if (key.equals(x.key)) {
+              x.val = val;
+               return;
+            } // 命中，更新
+        first = new Node(key, val, first); // 未命中，新建结点
+    }
+}
+```
+
+<!-- tabs:start -->
+
+#### **命题**
+
+在含有 $N$ 对键值的机遇（无序）链表的符号表中，未命中的查找和插入操作都需要 $N$ 次比较。命中的查找在最坏的情况也需要 $N$ 次比较。
+
+#### **推论**
+
+向一个空表中插入 $N$ 个不同的键需要 ~$N^2/2$ 次比较。
+
+<!-- tabs:end -->
+
+基于链表的实现以及顺序查找是非常低效的，无法满足 FrequencyCounter 处理庞大输入问题的需求。
+
+这里我们用 FrequencyCounter 以及命令行参数 8 来分析 tale.txt 。为了将性能可视化我们使用了 VisualAccumulator 将每次 `put()` 操作转换为两个点：
+
+> 对于第 i 次 `put()` 操作：
+> 
+> - 在横坐标为 i，纵坐标为该次操作所进行的比较次数的位置画一个灰点；
+> - 在横坐标为 i，纵坐标为前 i 次 `put()` 操作累计所需的平均比较次数的位置画一个红点。
+
+<div style="text-align: center;">
+
+![cost-for-SequentialSeatchST](../_media/3.1/cost-for-SequentialSeatchST.jpeg ':size=600')
+
+</div>
 

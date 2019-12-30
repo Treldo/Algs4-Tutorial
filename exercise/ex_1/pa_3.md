@@ -439,5 +439,3 @@ public void remove(Chain<String> c, String s) {
     }
 }
 ```
-
----
