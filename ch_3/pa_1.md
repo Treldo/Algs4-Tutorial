@@ -172,12 +172,14 @@ public class SequentialSearchST<Key, Value> {
             this.next = next;
         }
     }
+
     public Value get(Key key) { // 查找给定的键，返回相关联的值
         for (Node x = first; x != null; x = x.next)
             if (key.equals(x.key))
                 return x.val; // 命中
         return null; // 未名中
     }
+
     public void put(Key key, Value val) { // 查找给定的键，找到则更新其值，否则在表中新建结点
         for (Node x = first; x != null; x = x.next)
             if (key.equals(x.key)) {
@@ -215,4 +217,141 @@ public class SequentialSearchST<Key, Value> {
 ![cost-for-SequentialSeatchST](../_media/3.1/cost-for-SequentialSeatchST.jpeg ':size=600')
 
 </div>
+
+## 有序数组中的二分查找
+
+核心实现是 `rank()` 方法，它返回表中小于给定键的键的数量。
+
+**使用基于有序数组的符号表实现的索引用例的轨迹**
+
+<div style="text-align: center;">
+
+![trace-of-ordered-array-st-for-stdIndexClient](../_media/3.1/trace-of-ordered-array-st-for-stdIndexClient.jpeg ':size=600')
+
+</div>
+
+**二分查找（基于有序数组）**
+
+```java
+public class BinarySearchST<Key extends Comparable<Key>, Value> {
+    private Key[] keys;
+    private Value[] vals;
+    private int N;
+
+    public BinarySearchST(int capacity) { // 调整数组大小的标准代码请见算法1.1
+        keys = (Key[]) new Comparable[capacity];
+        vals = (Value[]) new Object[capacity];
+    }
+
+    public int size() {
+        return N;
+    }
+
+    public Value get(Key key) {
+        if (isEmpty()) return null;
+        int i = rank(key);
+        if (i < N && keys[i].compareTo(key) == 0)
+            return vals[i];
+        else return null;
+    }
+
+    public int rank(Key key) // 请见算法3.2（续1）
+
+    public void put(Key key, Value val) { // 查找键，找到则更新值，否则创建新的元素
+        int i = rank(key);
+        if (i < N && keys[i].compareTo(key) == 0) {
+            vals[i] = val;
+            return;
+        }
+        for (int j = N; j > i; j--) {
+            keys[j] = keys[j - 1];
+            vals[j] = vals[j - 1];
+        }
+        keys[i] = key;
+        vals[i] = val;
+        N++;
+    }
+
+    public void delete(Key key) // 该方法的实现请见练习3.1.16
+
+}
+```
+### 二分查找
+
+**递归的二分查找**
+
+```java
+public int rank(Key key, int lo, int hi) {
+    if (hi < lo) return lo;
+    int mid = lo + (hi - lo) / 2;
+    int cmp = key.compareTo(keys[mid]);
+    if (cmp < 0) return rank(key, lo, mid - 1);
+    else if (cmp > 0) return rank(key, mid + 1, hi);
+    else return mid;
+}
+```
+
+**基于有序数组的二分查找（迭代）**
+
+```java
+public int rank(Key key) {
+    int lo = 0, hi = N - 1;
+    while (lo <= hi) {
+        int mid = lo + (hi - lo) / 2;
+        int cmp = key.compareTo(keys[mid]);
+        if (cmp < 0) hi = mid - 1;
+        else if (cmp > 0) lo = mid + 1;
+        else return mid;
+    }
+    return lo;
+}
+```
+
+**在有序数组中使用二分法查找排名的轨迹**
+
+<dir style="text-align: center;">
+
+![trace-of-binarySearch-for-rank-in-orderedArray](../_media/3.1/trace-of-binarySearch-for-rank-in-orderedArray.jpeg ':size=500')
+
+</dir>
+
+### 其他操作
+
+**基于二分查找的有序符号表的其他操作**
+
+```java
+public Key min() {
+    return keys[0];
+}
+
+public Key max() {
+    return keys[N - 1];
+}
+
+public Key select(int k) {
+    return keys[k];
+}
+
+public Key ceiling(Key key) {
+    int i = rank(key);
+    return keys[i];
+}
+
+public Key floor(Key key) // 请见练习3.1.17
+
+public Key delete(Key key) // 请见练习3.1.16
+
+public Iterable<Key> keys(Key lo, Key hi) {
+    Queue<Key> q = new Queue<Key>();
+    for (int i = rank(lo); i < rank(hi); i++)
+        q.enqueue(keys[i]);
+    if (contains(hi))
+        q.enqueue(keys[rank(hi)]);
+    return q;
+}
+```
+
+自己完成 `delete()` 和 `floor()` 方法。
+
+## 对二分查找的分析
 
