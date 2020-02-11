@@ -1,4 +1,4 @@
-<img src="_media/cover.svg" width="80%">
+<img src="_media/cover.png" width="80%">
 
 # Algs4-Tutorial
 
