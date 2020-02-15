@@ -355,3 +355,59 @@ public Iterable<Key> keys(Key lo, Key hi) {
 
 ## 对二分查找的分析
 
+<!-- tabs:start -->
+
+#### **<b>命题</b>**
+
+- 在 $N$ 个键的有序数组中进行二分查找最多需要 $lgN+1$ 次比较（无论是否成功）。
+
+- 向大小为 $N$ 的有序数组中插入一个 新的元素在最坏情况下需要访问 ∼$2N$ 次数组，因此 向一个空符号表中插入 $N$ 个元素在最坏情况下需要 访问 ∼$N^2$ 次数组。
+
+<!-- tabs:end -->
+
+**BinarySearchST 的操作成本**
+
+<div style="text-align: center;">
+
+![cost-of-binarysearchst](../_media/3.1/cost-of-binarysearchst.png ':size=300')
+
+</div>
+
+**使用 BinarySearchST，运行 `java FrequencyCounter 8 < tale.txt` 的成本**
+
+<div style="text-align: center;">
+
+![cost-of-binarysearchst-visual-8](../_media/3.1/cost-of-binarysearchst-visual-8.png ':size=600')
+
+</div>
+
+二分查找算是一个很基本的算法知识点，这里不多作叙述。仅展示部分操作的成本。
+
+## 总结
+
+对于一个不允许插入的静态表来说，在初始化的时候就将它排序是值得的，这种情况就很适合使用二分查找。而对于需要进行大量插入与查找（甚至删除）操作的符号表来说，二分查找就不适合了。例如它无法处理 Leipzig Corpora 数据库。
+
+**简单符号表实现的成本总结**
+
+<div style="text-align: center;">
+
+![single-table-summary](../_media/3.1/single-table-summary.png ':size=700')
+
+</div>
+
+> 要实现一种支持高效插入的符号表，我们可能需要一种链式的结构。但单链表是无法使用二叉查找的，所以我们需要一种更为复杂的数据结构，那就是 **二叉查找树** 。
+
+这里我们给出几种数据结构在不同应用环境中适用与不适用的原因。
+
+**符号表各种实现的优缺点**
+
+<div style="text-align: center;">
+
+![different-single-table](../_media/3.1/different-single-table.png ':size=700')
+
+</div>
+
+## 补充
+
+- 我们使用 `equals()` 而不是 `compareTo()` 的原因是：不是所有数据的键值对都可以进行比较，也许只能判断它们是否相等。
+
