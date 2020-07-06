@@ -7,5 +7,5 @@
 * 附带习题解答
 * 持续更新
 
-[GitHub](https://github.com/Vubee/Algs4-Tutorial)
+[GitHub](https://github.com/Treldo/Algs4-Tutorial)
 [开始](#写在前面)
