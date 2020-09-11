@@ -1,16 +1,16 @@
-!> <small><b>免责声明</b>：本项目多半内容来自于《算法》一书，提供的所有资料仅供学习使用。如涉及到版权问题，请通过 [邮箱](mailto:vuebee@163.com) 联系我。</small>
+!> <small><b>免责声明</b>：本项目多半内容来自于《算法》一书，提供的所有资料仅供学习使用。如涉及到版权问题，请通过 [邮箱](mailto:foyoodo@163.com) 联系我。</small>
 
 ### 写在前面
 
-[**Algs4-Tutorial**](https://github.com/vubee/Algs4-Tutorial) 是一个托管在 GitHub 上的项目，它涵盖了《算法》一书中的绝大部分重要知识点以及一些浅显易懂的解释，目的是希望能帮助自己和大家更好地掌握书中的内容，并在复习时有一个可以对照的大纲。
+[**Algs4-Tutorial**](https://github.com/treldo/Algs4-Tutorial) 是一个托管在 GitHub 上的项目，它涵盖了《算法》一书中的绝大部分重要知识点以及一些浅显易懂的解释，目的是希望能帮助自己和大家更好地掌握书中的内容，并在复习时有一个可以对照的大纲。
 
 当然，你也可以认为这是本书 📚 的 **精简版** 。
 
-知识水平有限，bug 在所难免，文档尚未开启评论功能。如果你发现文中出错的地方欢迎通过 [邮箱](mailto:vuebee@163.com) 或者提 <a href="https://github.com/Vubee/Algorithms-4th-Tutorial/issues/new" target="_blank">issues</a> 反馈给我，我会尽量及时回复并进行修正。如果你希望出现在 [鸣谢]() 的人员名单里也可以于我注明。
+知识水平有限，bug 在所难免，文档尚未开启评论功能。如果你发现文中出错的地方欢迎通过 [邮箱](mailto:foyoodo@163.com) 或者提 <a href="https://github.com/treldo/Algorithms-4th-Tutorial/issues/new" target="_blank">issues</a> 反馈给我，我会尽量及时回复并进行修正。如果你希望出现在 [鸣谢]() 的人员名单里也可以于我注明。
 
 因为想要加快一下学习进度，顺便巩固所学知识。对于课后习题的解答，目前主要更新练习题，提高题和实验题会在正文内容更新完毕后不定时加进来。
 
-部分解题代码用到了书中提供的类库，VS Code、IDEA 等编辑器内置了快捷跳转至源码位置的操作，读者可以根据自身情况进行参考。另附本书配套的 <a href="https://vubee.github.io/Javadoc_algs4/index.html" target="_blank">在线 API 文档</a> <font color="red"><small>（非官方在线文档，支持搜索，托管于 GitHub）</small></font>、[部分章节源码](https://algs4.cs.princeton.edu/code/) ，以及下载链接 [API 文档](https://github.com/Vubee/Javadoc_algs4/archive/master.zip) 、[algs4.jar](https://algs4.cs.princeton.edu/code/algs4.jar) 、[algs4-data.zip](https://algs4.cs.princeton.edu/code/algs4-data.zip) 。
+部分解题代码用到了书中提供的类库，VS Code、IDEA 等编辑器内置了快捷跳转至源码位置的操作，读者可以根据自身情况进行参考。另附本书配套的 <a href="https://treldo.github.io/Javadoc_algs4/index.html" target="_blank">在线 API 文档</a> <font color="red"><small>（非官方在线文档，支持搜索，托管于 GitHub）</small></font>、[部分章节源码](https://algs4.cs.princeton.edu/code/) ，以及下载链接 [API 文档](https://github.com/treldo/Javadoc_algs4/archive/master.zip) 、[algs4.jar](https://algs4.cs.princeton.edu/code/algs4.jar) 、[algs4-data.zip](https://algs4.cs.princeton.edu/code/algs4-data.zip) 。
 
 💡 要善于利用本书官网配套的源码！
 
