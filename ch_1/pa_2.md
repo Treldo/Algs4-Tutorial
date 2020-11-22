@@ -275,4 +275,4 @@ public class TestVisualAccumulator {
 
 ## 习题
 
-见 [习题 1-2]() 。
+见 [习题 1-2](/exercise/ex_1/pa_2) 。

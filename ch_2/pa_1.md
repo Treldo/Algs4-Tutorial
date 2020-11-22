@@ -243,4 +243,4 @@ public class Shell {
 
 ## 习题
 
-见 [习题 2-1]() 。
+见 [习题 2-1](/exercise/ex_2/pa_1) 。

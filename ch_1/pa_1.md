@@ -165,4 +165,4 @@ $ java BinarySearch tinyW.txt < tinyT.txt
 
 ## 习题
 
-见 [习题 1-1]() 。
+见 [习题 1-1](/exercise/ex_1/pa_1) 。

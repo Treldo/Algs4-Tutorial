@@ -222,4 +222,4 @@ public class ThreeSumFast {
 
 ## 习题
 
-见 [习题 1-4]() 。
+见 [习题 1-4](/exercise/ex_1/pa_4) 。

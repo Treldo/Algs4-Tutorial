@@ -1,4 +1,4 @@
-!> <small><b>免责声明</b>：本项目多半内容来自于《算法》一书，提供的所有资料仅供学习使用。如涉及到版权问题，请通过 [邮箱](mailto:foyoodo@163.com) 联系我。</small>
+!> <small><b>免责声明</b>：本项目多半内容来自于《算法》一书，提供的所有资料仅供学习使用。如涉及到版权问题，请通过 [邮箱](mailto:foyoodo@gmail.com) 联系我。</small>
 
 ### 写在前面
 
@@ -6,7 +6,7 @@
 
 当然，你也可以认为这是本书 📚 的 **精简版** 。
 
-知识水平有限，bug 在所难免，文档尚未开启评论功能。如果你发现文中出错的地方欢迎通过 [邮箱](mailto:foyoodo@163.com) 或者提 <a href="https://github.com/treldo/Algorithms-4th-Tutorial/issues/new" target="_blank">issues</a> 反馈给我，我会尽量及时回复并进行修正。如果你希望出现在 [鸣谢]() 的人员名单里也可以于我注明。
+知识水平有限，bug 在所难免，文档尚未开启评论功能。如果你发现文中出错的地方欢迎通过 [邮箱](mailto:foyoodo@gmail.com) 或者提 <a href="https://github.com/treldo/Algorithms-4th-Tutorial/issues/new" target="_blank">issues</a> 反馈给我，我会尽量及时回复并进行修正。如果你希望出现在 [鸣谢]() 的人员名单里也可以于我注明。
 
 因为想要加快一下学习进度，顺便巩固所学知识。对于课后习题的解答，目前主要更新练习题，提高题和实验题会在正文内容更新完毕后不定时加进来。
 
@@ -14,22 +14,16 @@
 
 💡 要善于利用本书官网配套的源码！
 
-手头有书的同学最好与原书对照阅读，没有书的同学可以参考我分享出来的英文版 <a href="https://545c.com/file/21865438-400334796" target="_blank">Algorithms 4th.pdf</a> 。
+手头有书的同学最好与原书对照阅读，没有书的同学可以参考我分享出来的英文版 <a href="https://wwe.lanzous.com/ioxHMin4ani" target="_blank">Algorithms 4th.pdf</a> 。
 
-**<small>由于国内对 GitHub 的访问速度不是很好，网页加载速度可能会慢一些。如果网速不是很好的话，建议连接校园网等公共网络进行进行访问。</small>**
-
-<b><font color="red">‼️</font> 更新速度：</b>周一更新章节，周二更新习题。
-
-*预计完更时间：2020 年中旬*
-
-<mark>原书 **第三版** 的解答可参阅项目 [CLRS Solutions](https://walkccc.github.io/CLRS/) 。</mark>
+**由于国内访问 GitHub 不是很通畅，网页加载速度可能会慢一些。如果网速不是很好的话，建议连接校园网等公共网络进行进行访问。**
 
 部分习题答案是可以在 <a href="https://algs4.cs.princeton.edu/home/" target="_blank">官网</a> 上找到的，另外
 - <a href="https://github.com/ikesnowy" target="_blank">沈星繁</a> 同学制作了 C# 版的习题题解网站，支持题目检索，并提供了配套 API 文档，见 <a href="https://alg4.ikesnowy.com" target="_blank">C# 题解</a> ；
 - <a href="https://github.com/jimmysuncpt" target="_blank">大强哥</a> 在 GitHub 分享了自己的解题代码，虽然不是特别详细，但很值得参考，见 <a href="https://github.com/jimmysuncpt/Algorithms" target="_blank">Algorithms</a> ；
 - <a href="https://github.com/YangXiaoHei" target="_blank">杨晗</a> 同学也在 GitHub 上分享了自己的解题代码，目前更新到第四章，见 <a href="https://github.com/YangXiaoHei/Algorithms" target="_blank">Algorithms</a> 。
 
-在此感谢他们的分享！
+**在此感谢他们的分享！**
 
 <div style="text-align: right;">
 

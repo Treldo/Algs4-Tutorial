@@ -915,4 +915,4 @@ Stack<String>[] a = (Stack<String>[]) new Stack[N];
 
 ## 习题
 
-见 [习题 1-3]()
+见 [习题 1-3](/exercise/ex_1/pa_3)

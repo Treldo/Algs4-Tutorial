@@ -205,4 +205,4 @@ public static Comparable select(Comparable[] a, int k) {
 
 ## 练习
 
-见 [习题 2-5]() 。
+见 [习题 2-5](/exercise/ex_2/pa_5) 。

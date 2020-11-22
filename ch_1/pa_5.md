@@ -267,4 +267,4 @@ public int find(int p) {
 
 ## 习题
 
-见 [习题 1-5]() 。
+见 [习题 1-5](/exercise/ex_1/pa_5) 。
